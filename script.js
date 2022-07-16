@@ -73,5 +73,14 @@ function playRound(playerSelection, computerSelection) {
         case "Lose":
             return `You ${playerOutcome}! ${computerSelection} beats ${playerSelection}`;
     }
+}
 
+function game() {
+    let player;
+    let computer;
+    for (let i = 0; i < 5; i++) {
+        player = prompt("Rock? Paper? Scissor? Pick one", "");
+        computer = getComputerChoice();
+        console.log(playRound(player, computer));
+    }
 }
