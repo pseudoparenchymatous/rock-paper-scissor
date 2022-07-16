@@ -18,7 +18,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.slice(-1).toUpperCase() + playerSelection.slice(1).toLowerCase();
+    playerSelection = playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1).toLowerCase();
 
     let playerOutcome;
     switch (playerSelection) {
@@ -49,7 +49,7 @@ function playRound(playerSelection, computerSelection) {
                     break;
             }
             break;
-            
+
         case "Scissor":
             switch (computerSelection) {
                 case "Rock":
