@@ -84,3 +84,5 @@ function game() {
         console.log(playRound(player, computer));
     }
 }
+
+game();
